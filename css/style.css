@@ -1875,3 +1875,23 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Background image auto adjust to phone screen*/
+
+#fh5co-header {
+  background-image: url("images/img_bg_2.jpg");
+  background-size: cover;        /* Scale to fill screen */
+  background-position: center;   /* Keep image centered */
+  background-repeat: no-repeat;  /* Avoid tiling */
+  min-height: 100vh;             /* Full viewport height */
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  #fh5co-header {
+    background-size: contain;    /* Fit whole image inside */
+    background-position: center;
+    background-color: #000;      /* Optional: fill gaps with black */
+  }
+}
